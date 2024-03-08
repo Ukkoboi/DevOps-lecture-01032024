@@ -1,4 +1,4 @@
-name: Issue assinger
+name: "Issue assinger"
 
 on:
  issues:
@@ -9,8 +9,8 @@ jobs:
  auto-assign:
   runs-on: ubuntu-latest
   steps:
-    - name: 'Auto-assign issue'
-      uses: pozil/auto-assign-issue@v1
+    - name: Auto-assign issue
+      uses: pozil/auto-assign-issue@v1.13.0
       with:
-       repo-token: ${{ secrets.GITHUB_TOKEN }}
+       repo-token: ${{secrets.GITHUB_TOKEN}}
        assignees: Ukkoboi
